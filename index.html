@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Register for Code With Darby, a free beginner-friendly introduction to programming.">
+  <title>Code With Darby | Free Programming Class</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">CODE WITH <span>DARBY.</span></a>
+    <span class="free-tag">100% FREE CLASS</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR CODING JOURNEY STARTS HERE</p>
+
+        <h1>Learn to Code.<br>
+          <span>Start Something Great.</span>
+        </h1>
+
+        <p class="hero-description">
+          Curious about programming but don't know where to start?
+          Let's take your first step together!
+        </p>
+
+        <div class="class-details">
+          <div class="detail">
+            <span class="detail-icon">📅</span>
+            <div>
+              <small>CLASS DATES</small>
+              <p>November 20th–21st, 2026</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <span class="detail-icon">⏰</span>
+            <div>
+              <small>TIME</small>
+              <p>7:00 PM WAT daily</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <span class="detail-icon">📱</span>
+            <div>
+              <small>PLATFORM</small>
+              <p>WhatsApp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="countdown-card">
+          <p class="countdown-heading">COUNTDOWN TO CLASS</p>
+
+          <div class="countdown" aria-live="off">
+            <div class="time-box">
+              <span id="days">00</span>
+              <small>DAYS</small>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span>
+              <small>HOURS</small>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <small>MINS</small>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <small>SECS</small>
+            </div>
+          </div>
+
+          <p id="countdown-message" class="countdown-message">
+            Your journey into programming begins soon!
+          </p>
+        </div>
+
+        <p class="no-laptop">
+          💜 NO LAPTOP? NO PROBLEM! You can join with your smartphone.
+        </p>
+      </div>
+    </section>
+
+    <section class="registration-section" id="register">
+      <div class="form-heading">
+        <p class="eyebrow">SAVE YOUR SPOT</p>
+        <h2>Register for the class</h2>
+        <p>Fill in your details below. Registration is completely free.</p>
+      </div>
+
+      <form id="registration-form"
+        action="https://formspree.io/f/mvkzjrkl" method="POST">
+
+        <div class="input-group">
+          <label for="fullName">Full name *</label>
+          <input type="text" id="fullName" name="Full name"
+            placeholder="Enter your full name" autocomplete="name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email address *</label>
+          <input type="email" id="email" name="Email"
+            placeholder="you@example.com" autocomplete="email" required>
+        </div>
+
+        <div class="input-group">
+          <label for="phone">WhatsApp phone number *</label>
+          <input type="tel" id="phone" name="WhatsApp number"
+            placeholder="+234 800 000 0000" autocomplete="tel" required>
+          <small>Include your country code so we can identify your number.</small>
+        </div>
+
+        <div class="input-group">
+          <label for="country">Country *</label>
+          <input type="text" id="country" name="Country"
+            placeholder="Which country are you joining from?" required>
+        </div>
+
+        <div class="input-group">
+          <label for="experience">Your programming experience *</label>
+          <select id="experience" name="Programming experience" required>
+            <option value="" disabled selected>Select an option</option>
+            <option value="Complete beginner">I'm a complete beginner</option>
+            <option value="Know a little">I know a little about coding</option>
+            <option value="Some experience">I've tried coding before</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="device">What device will you use? *</label>
+          <select id="device" name="Learning device" required>
+            <option value="" disabled selected>Choose your device</option>
+            <option value="Smartphone">Smartphone</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Both">Both smartphone and laptop</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="expectations">What would you like to learn? (Optional)</label>
+          <textarea id="expectations" name="Learning goals"
+            rows="3" placeholder="Tell us what you hope to learn..."></textarea>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="Attendance confirmation"
+            value="I intend to attend both sessions" required>
+          <span>I understand that this is a two-day online class, and I intend to participate. *</span>
+        </label>
+
+        <input type="hidden" name="Class" value="Code With Darby">
+        <input type="hidden" name="Class dates"
+          value="November 20th–21st, 2026">
+        <input type="hidden" name="Class time" value="7:00 PM WAT daily">
+
+        <button type="submit" id="submit-btn">Complete Registration →</button>
+
+        <p id="form-message" class="form-message"
+          role="status" aria-live="polite"></p>
+
+        <p class="privacy-note">
+          🔒 Your details will be used to coordinate this class and communicate
+          important class updates.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with 💜 by <strong>Onoseigho Darby</strong></p>
+    <p>Learn • Build • Grow</p>
+  </footer>
+
+</body>
+</html>
